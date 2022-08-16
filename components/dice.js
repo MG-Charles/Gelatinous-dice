@@ -14,18 +14,18 @@ class Dice extends React.Component {
     }
 
     roll(){        
-        let number = Math.floor(Math.random() * 20) + 1;        
+        let number = Math.floor(Math.random() * this.props.max) + 1;      
+
         this.setState(state => ({
             numberRolled: number
         }));
-      
     }
 
     render(){
         return (
             <div className={styles.dice} onClick={this.roll}>
                 <div className={styles.content}>
-                    <h3 className={styles.text}>Click to roll me</h3>
+                    <h3 className={styles.text}>Click to roll this d{this.props.max}</h3>
                     <div className={styles.number}>{this.state.numberRolled}</div>
                 </div>
             </div>

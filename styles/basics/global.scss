@@ -12,5 +12,11 @@ $base4x: 20px * 4;
 $base5x: 20px * 5;
 $base6x: 20px * 6;
 
+$screen-sm: 600px;
+$screen-md: 820px;
+$screen-lg: 1080px;
+$screen-xl: 1200px;
+
 @import "/styles/basics/link.scss";
 @import "/styles//basics/row.scss";
+@import "/styles/basics/mixins.scss";

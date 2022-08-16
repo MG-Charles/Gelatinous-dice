@@ -14,7 +14,13 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Gelatinous dice</h1>
-        <Dice />
+        <div className={styles.grid}>
+          <Dice max="4" />
+          <Dice max="6" />
+          <Dice max="8" />
+          <Dice max="12" />
+          <Dice max="20" />
+        </div>
       </main>
 
       <footer className={styles.footer}>

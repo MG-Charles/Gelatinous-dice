@@ -47,3 +47,17 @@
   height: 1em;
   margin-left: 0.5rem;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: $base;
+
+  @include largeTablet {
+    grid-template-columns: repeat(2, 1fr);
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+}
