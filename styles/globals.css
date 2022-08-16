@@ -1,9 +1,12 @@
+@font-face {
+  font-family: "roboto-mono";
+  src: url("../public/fonts/roboto/robotomono-regular.ttf") format("truetype");
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-family: "roboto-mono", -apple-system, Roboto, sans-serif, serif;
 }
 

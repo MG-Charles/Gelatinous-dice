@@ -5,10 +5,12 @@ $color-accent: rgb(132, 169, 140);
 $background: #2f3e46ff;
 $color-text: #cad2c5ff;
 
-@font-face {
-  font-family: "roboto-mono";
-  src: url("/src/fonts/roboto/RobotoMono-Regular.ttf") format("truetype");
-}
+$base: 20px;
+$base2x: 20px * 2;
+$base3x: 20px * 3;
+$base4x: 20px * 4;
+$base5x: 20px * 5;
+$base6x: 20px * 6;
 
 @import "/styles/basics/link.scss";
 @import "/styles//basics/row.scss";
