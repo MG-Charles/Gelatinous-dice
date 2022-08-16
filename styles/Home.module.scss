@@ -18,7 +18,7 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid $color-primary;
+  border-top: 1px solid $color-secondary;
   justify-content: center;
   align-items: center;
 }
@@ -34,7 +34,7 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
-  color: $color-primary;
+  text-transform: uppercase;
 }
 
 .title,

@@ -1,4 +1,14 @@
-$color-primary: teal;
+/* SCSS HEX */
+$color-primary: #354f52ff;
+$color-secondary: #52796fff;
+$color-accent: rgb(132, 169, 140);
+$background: #2f3e46ff;
+$color-text: #cad2c5ff;
+
+@font-face {
+  font-family: "roboto-mono";
+  src: url("/src/fonts/roboto/RobotoMono-Regular.ttf") format("truetype");
+}
 
 @import "/styles/basics/link.scss";
 @import "/styles//basics/row.scss";
