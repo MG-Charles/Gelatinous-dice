@@ -17,6 +17,8 @@ $screen-md: 820px;
 $screen-lg: 1080px;
 $screen-xl: 1200px;
 
+$transition-basic: cubic-bezier(0.58, 0, 0.32, 1);
+
 @import "/styles/basics/link.scss";
 @import "/styles//basics/row.scss";
 @import "/styles/basics/mixins.scss";
