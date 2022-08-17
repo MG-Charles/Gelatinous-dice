@@ -4,23 +4,23 @@ import styles from "../styles/components/dice.module.scss";
 class Dice extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {            
+        this.state = {
             numberRolled: 0,
-            numberArray: Array.from({length: this.props.max}, (_, i) => i + 1),
+            numberArray: Array.from({ length: this.props.max }, (_, i) => i + 1),
             isRolling: false,
         };
-    
+
         // Cette liaison est nécéssaire afin de permettre
         // l'utilisation de `this` dans la fonction de rappel.
         this.roll = this.roll.bind(this);
     }
 
-    roll(){        
-        let number = Math.floor(Math.random() * this.props.max) + 1;              
+    roll() {
+        let number = Math.floor(Math.random() * this.props.max) + 1;
 
         this.setState(state => ({
             numberRolled: 0,
-            isRolling: true,            
+            isRolling: true,
         }));
 
         setTimeout(() => {
@@ -28,10 +28,10 @@ class Dice extends React.Component {
                 numberRolled: number,
                 isRolling: false,
             }));
-        }, this.props.max * 300 + 300);        
+        }, this.props.max * 300 + 300);
     }
 
-    render(){
+    render() {
         return (
             <div className={styles.dice} onClick={this.roll}>
                 <div className={styles.content}>

@@ -18,6 +18,7 @@ export default function Home() {
           <Dice max="4" />
           <Dice max="6" />
           <Dice max="8" />
+          <Dice max="10" />
           <Dice max="12" />
           <Dice max="20" />
         </div>
@@ -27,7 +28,7 @@ export default function Home() {
         <div className={styles.row}>
           <p>Created by</p>
           <a className={styles.link} href="https://github.com/ChuckLeon/" target="_blank" rel="noreferrer noopener"> Charles Héon</a>
-        </div> 
+        </div>
       </footer>
     </div>
   );
